@@ -1,0 +1,5 @@
+References
+
+[1] Bahmani, B., Moseley, B., Vattani, A., Kumar, R., & Vassilvitskii, S. (2012). Scalable k-means++. arXiv preprint arXiv:1203.6402.
+
+[2] Escuela de Ciencias de la Computación e Informática, Universidad de Costa Rica, CI-0117 PrgParCnc II-2019, Prf.: Alan Calderón Castro, Proyecto con MPI4PY
