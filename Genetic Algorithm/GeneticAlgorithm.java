@@ -1,3 +1,5 @@
+// Allen Ramírez Ramírez, linkedin.com/in/allenramirezramirez
+
 package dev.hardsoft.adaptationheroes;
 
 import android.os.Build;
