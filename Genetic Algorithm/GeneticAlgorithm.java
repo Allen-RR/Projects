@@ -1,19 +1,19 @@
-// Allen Ramírez Ramírez, linkedin.com/in/allenramirezramirez
+/* Allen Ramírez Ramírez
+LinkedIn: linkedin.com/in/allenramirezramirez
+Portfolio: allen-rr.github.io
+GitHub: github.com/Allen-RR
+*/
 
 package dev.hardsoft.adaptationheroes;
-
 import android.os.Build;
-
-//import java.util.Arrays;
 import java.util.Random;
 
 public class GeneticAlgorithm {
-    //public  String adaptabilityKey = "Adaptability";
-    //public int adaptabilityValue = -1;
     public int poolSize = 15; // Adaptable
     public int organismCards = 7; // Adaptable
     public int populationSize = 10; // Adaptable
     public int cycles = 50; // Adaptable
+    
     public int anyOrganism = 0;
     public int primeAdaptability = 0;
     public int worstAdaptability = 0;
@@ -29,10 +29,8 @@ public class GeneticAlgorithm {
     public int[][] geneticAlgorithm(int[][] p) {
         pool = p;
         for (int n = 0; n < cycles; n++) {
-            //Arrays.fill(newGeneration, null);
             newGeneration = new int[populationSize][organismCards+1][2];
             for (int i = 0; i < populationSize; i++) { // Generate population
-                //Arrays.fill(organism, null);
                 organism = new int[organismCards+1][2];
                 for (int j = 1; (j <= organismCards) && (n==0); j++) { // Make organism
                     anyOrganism = random.nextInt(poolSize);
@@ -40,7 +38,6 @@ public class GeneticAlgorithm {
                     organism[0][1] += pool[anyOrganism][1]; // Calculate the adaptability value
                     organism[j][0] = pool[anyOrganism][0];
                     organism[j][1] = pool[anyOrganism][1];
-                    //anyOrganism = random.nextInt(poolSize);
                 }
                 if(organism[0][1] > primeAdaptability){
                     prime = organism;
